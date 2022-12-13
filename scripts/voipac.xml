@@ -7,7 +7,7 @@
   <remote fetch="https://github.com/Freescale"     name="freescale"/>
   <remote fetch="https://git.openembedded.org"     name="oe"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="caf"/>
-  <remote fetch="ssh://git@github.com/voipac" name="voipac"/>
+  <remote fetch="https://github.com/voipac" name="voipac"/>
 
   <project remote="yocto" revision="dunfell"       name="poky"                    path="sources/poky"/>
   <project remote="yocto"  revision="dunfell"       name="meta-freescale"          path="sources/meta-freescale"/>
