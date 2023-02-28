@@ -18,6 +18,6 @@
   <project remote="freescale"  revision="dunfell"   name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
   <project remote="freescale"   revision="dunfell"  name="meta-freescale-distro"   path="sources/meta-freescale-distro"/>
   <project remote="freescale"    revision="dunfell" name="Documentation"           path="sources/Documentation"/>
-  <project remote="voipac"    revision="dunfell" name="meta-imx8m-voipac"           path="sources/meta-voipac"/>
+  <project remote="voipac"    revision="master" name="meta-imx8m-voipac"           path="sources/meta-voipac"/>
 
 </manifest>
