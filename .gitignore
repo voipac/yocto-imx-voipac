@@ -1,5 +1,2 @@
 sources/*
-build-voipac/*
-.repo
-downloads
-setup-environment
+build/*

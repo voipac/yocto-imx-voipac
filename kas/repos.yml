@@ -1,0 +1,63 @@
+header:
+  version: 10
+
+repos:
+  poky:
+    url: "https://git.yoctoproject.org/git/poky"
+    refspec: 046b70083f3bc9e25f547e8026400032f5c563d9
+    path: sources/poky
+    layers:
+        meta:
+        meta-poky:
+
+  meta-openembedded:
+    url: "https://github.com/openembedded/meta-openembedded.git"
+    refspec: 1750c66ae8e4268c472c0b2b94748a59d6ef866d
+    path: sources/meta-oe
+    layers:
+        meta-oe:
+        meta-multimedia:
+        meta-networking:
+        meta-python:
+        meta-filesystems:
+        meta-gnome:
+
+  meta-freescale:
+    url: "https://github.com/Freescale/meta-freescale.git"
+    refspec: 0a73d1bdd7713a6189482e463c98043c9939a2a2
+    path: sources/meta-freescale
+
+  meta-freescale-3rdparty:
+    url: "https://github.com/Freescale/meta-freescale-3rdparty.git"
+    refspec: 7725256e3859b62f1ff201db7f2cf7026c17656d
+    path: sources/meta-freescale-3rdparty
+
+  meta-freescale-distro:
+    url: "https://github.com/Freescale/meta-freescale-distro.git"
+    refspec: 4f1f101ebab5eb054bfbed10b247fc0547b30793
+    path: sources/meta-freescale-distro
+
+  meta-imx:
+    url: "https://github.com/nxp-imx/meta-imx.git"
+    refspec: rel_imx_6.6.3_1.0.0
+    path: sources/meta-imx
+    layers:
+      meta-imx-bsp:
+      meta-imx-ml:
+      meta-imx-sdk:
+
+  meta-arm:
+    url: "https://git.yoctoproject.org/meta-arm.git"
+    refspec: 4d22f982bce8dff6f8c4d11845c47a4d39f961c6
+    path: sources/meta-arm
+    layers:
+      meta-arm:
+      meta-arm-toolchain:
+
+  meta-imx-voipac:
+    url: "https://github.com/voipac/meta-imx-voipac.git"
+    refspec: 4c23d25926949ba1049a85d403a9ba61cd57a3ea
+    path: sources/meta-imx-voipac
+    layers:
+      meta-voipac-bsp:
+      meta-voipac-evk:
