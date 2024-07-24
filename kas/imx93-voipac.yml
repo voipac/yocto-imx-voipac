@@ -1,7 +1,7 @@
 header:
   version: 10
   includes:
-    - repos.yml
+    - repos_scarthgap.yml
 
 
 bblayers_conf_header:
@@ -41,3 +41,9 @@ local_conf_header:
     ACCEPT_FSL_EULA = "1"
 
     INHERIT += "rm_work"
+
+    BBMASK += " \
+        meta-imx/meta-imx-bsp/recipes-security/optee/* \
+        meta-imx/meta-imx-bsp/recipes-security/smw/smw_git.bb \
+        "
+
