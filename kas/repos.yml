@@ -1,0 +1,46 @@
+header:
+  version: 10
+
+repos:
+  poky:
+    url: "https://git.yoctoproject.org/git/poky"
+    refspec: dunfell
+    path: sources/poky
+    layers:
+        meta:
+        meta-poky:
+
+  meta-openembedded:
+    url: "https://github.com/openembedded/meta-openembedded.git"
+    refspec: dunfell
+    path: sources/meta-oe
+    layers:
+        meta-oe:
+        meta-multimedia:
+        meta-networking:
+        meta-python:
+        meta-filesystems:
+        meta-gnome:
+
+  meta-freescale:
+    url: "https://github.com/Freescale/meta-freescale.git"
+    refspec: dunfell
+    path: sources/meta-freescale
+
+  meta-freescale-3rdparty:
+    url: "https://github.com/Freescale/meta-freescale-3rdparty.git"
+    refspec: dunfell
+    path: sources/meta-freescale-3rdparty
+
+  meta-freescale-distro:
+    url: "https://github.com/Freescale/meta-freescale-distro.git"
+    refspec: dunfell
+    path: sources/meta-freescale-distro
+
+  meta-imx-voipac:
+    url: "https://github.com/voipac/meta-imx-voipac.git"
+    refspec: dunfell
+    path: sources/meta-imx-voipac
+    layers:
+      meta-voipac-bsp:
+      meta-voipac-evk:
