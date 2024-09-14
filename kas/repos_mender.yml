@@ -1,0 +1,17 @@
+header:
+  version: 10
+
+repos:
+  meta-mender:
+    url: "https://github.com/mendersoftware/meta-mender.git"
+    refspec: 2f70dbad1441055c299332b7ef33dfe1e4f50c1c
+    path: sources/meta-mender
+    layers:
+        meta-mender-core:
+
+  meta-mender-community:
+    url: "https://github.com/nandra/meta-mender-community"
+    refspec: 0786d7c7982268671337cd6be0d0358033a40b02
+    path: sources/meta-mender-community
+    layers:
+      meta-mender-nxp:

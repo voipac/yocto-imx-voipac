@@ -1,0 +1,35 @@
+header:
+  version: 10
+  includes:
+    - repos_mender.yml
+
+local_conf_header:
+  mender: |
+    MENDER_ARTIFACT_NAME = "release-1"
+    MENDER_BOOT_PART_SIZE_MB = "64"
+    MENDER_STORAGE_TOTAL_SIZE_MB = "4096"
+    MENDER_FEATURES_ENABLE:append = " mender-uboot mender-image mender-image-sd mender-growfs-data mender-systemd mender-update-install"
+    MENDER_FEATURES_DISABLE:append = " mender-grub mender-image-uefi"
+    IMAGE_BOOT_FILES = "boot.scr"
+    MENDER_IMAGE_BOOTLOADER_FILE = "imx-boot"
+    MENDER_IMAGE_BOOTLOADER_BOOTSECTOR_OFFSET = "64"
+    #MENDER_BOOT_PART_SIZE_MB = "0"
+    MENDER_STORAGE_DEVICE = "/dev/mmcblk1"
+    MENDER_UBOOT_CONFIG_SYS_MMC_ENV_PART = "0"
+
+    MENDER_UBOOT_STORAGE_DEVICE = "1"
+
+    BOOTENV_SIZE = "0x20000"
+
+    IMAGE_FSTYPES += "sdimg.zst"
+    IMAGE_FSTYPES:remove = "wic.zst"
+
+    # use c++ mender client version
+    PREFERRED_VERSION_mender-client = "4.0"
+    PREFERRED_PROVIDER_mender-native = "mender-native"
+    PREFERRED_RPROVIDER_mender-auth = "mender"
+    PREFERRED_RPROVIDER_mender-update = "mender"
+
+    MENDER_DATA_PART_FSTAB_OPTS:append = ",x-systemd.growfs"
+
+    INIT_MANAGER = "systemd"
