@@ -1,0 +1,12 @@
+header:
+  version: 10
+  includes:
+    - mender.yml
+
+local_conf_header:
+  mender-emmc: |
+    MENDER_STORAGE_DEVICE = "/dev/mmcblk0"
+    MENDER_UBOOT_CONFIG_SYS_MMC_ENV_PART = "0"
+
+    MENDER_UBOOT_STORAGE_DEVICE = "0"
+

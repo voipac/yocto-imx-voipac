@@ -2,7 +2,7 @@ header:
   version: 10
   includes:
     - repos_scarthgap.yml
-
+    - mender-emmc.yml
 
 bblayers_conf_header:
   standard: |
@@ -46,4 +46,5 @@ local_conf_header:
         meta-imx/meta-imx-bsp/recipes-security/optee/* \
         meta-imx/meta-imx-bsp/recipes-security/smw/smw_git.bb \
         "
+
 
