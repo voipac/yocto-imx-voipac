@@ -10,8 +10,8 @@ repos:
         meta-mender-core:
 
   meta-mender-community:
-    url: "https://github.com/nandra/meta-mender-community"
-    refspec: 0786d7c7982268671337cd6be0d0358033a40b02
+    url: "https://github.com/mendersoftware/meta-mender-community.git"
+    refspec: 3fc71db2ad10034855c84b285127dade0d9a56ba
     path: sources/meta-mender-community
     layers:
       meta-mender-nxp:
