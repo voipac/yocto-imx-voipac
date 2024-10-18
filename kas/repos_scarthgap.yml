@@ -48,7 +48,7 @@ repos:
 
   meta-imx-voipac:
     url: "https://github.com/voipac/meta-imx-voipac.git"
-    refspec: eaf6daa935ec32fb85d32ded38af516d2f47a651
+    refspec: 98a7dcd17cf860da3385e98c1875afa05e2dabc5
     path: sources/meta-imx-voipac
     layers:
       meta-voipac-bsp:
