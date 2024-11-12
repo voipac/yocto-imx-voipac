@@ -1,0 +1,6 @@
+header:
+  version: 10
+
+local_conf_header:
+  dram_size: |
+    DRAM_SIZE = "2G"
