@@ -1,4 +1,4 @@
-# Example project for building Yocto for Voipac imx8m board
+# Example project for building Yocto for Voipac iMX boards
 
 ## Prerequisities
 Build was verified on Ubuntu 18.04 and Ubuntu 20.04.
