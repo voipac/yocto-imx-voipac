@@ -19,7 +19,7 @@ Please follow below steps how to build and flash imx8m image:
 - use `uuu` tool to flash image to target (for more info about flashing see: https://wiki.voipac.com/index.php?title=iMX8M_Industrial_Flashing_procedure)
 - boot your new build image
 
-## Test robot-board image
+## Test iMX93 Voice Command Demo 
 1. stop in the u-boot by pressing any key during boot and run `setenv fdtfile imx93-voipac-evk-boe-wxga-lvds-panel.dtb;saveenv;boot`
 2. login to system with user root
 3. run `/opt/gopoint-apps/scripts/multimedia/smart-kitchen/run.sh`
