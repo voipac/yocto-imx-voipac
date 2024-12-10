@@ -18,3 +18,9 @@ Please follow below steps how to build and flash imx8m image:
 - run `build_image_container.sh` script to build iMX93 Voipac devkit image in docker container
 - use `uuu` tool to flash image to target (for more info about flashing see: https://wiki.voipac.com/index.php?title=iMX8M_Industrial_Flashing_procedure)
 - boot your new build image
+
+## Test robot-board image
+1. stop in the u-boot by pressing any key during boot and run `setenv fdtfile imx93-voipac-evk-boe-wxga-lvds-panel.dtb;saveenv;boot`
+2. login to system with user root
+3. run `/opt/gopoint-apps/scripts/multimedia/smart-kitchen/run.sh`
+4. use voice detection 'Hey hood' followed by command  [Light on, Light off, Fan off, Fan low, Fan high] to get visual feedback
