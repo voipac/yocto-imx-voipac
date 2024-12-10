@@ -45,5 +45,6 @@ local_conf_header:
     BBMASK += " \
         meta-imx/meta-imx-bsp/recipes-security/optee/* \
         meta-imx/meta-imx-bsp/recipes-security/smw/smw_git.bb \
+        meta-imx/meta-imx-bsp/recipes-graphics/mesa/mesa_%.bbappend \
         "
 
