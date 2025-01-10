@@ -4,7 +4,7 @@ header:
 repos:
   poky:
     url: "https://git.yoctoproject.org/git/poky"
-    refspec: 02eacd385eca7aa9cf25aaaa61427aa9c126e0bc
+    refspec: 200d12b6a58ad961d60a7774ca0f7a9d29498724
     path: sources/poky
     layers:
         meta:
@@ -12,7 +12,7 @@ repos:
 
   meta-openembedded:
     url: "https://github.com/openembedded/meta-openembedded.git"
-    refspec: a72010b414ee3d73888ac9cb4e310e8f05e13aea
+    refspec: 72018ca1b1a471226917e8246e8b
     path: sources/meta-oe
     layers:
         meta-oe:
@@ -24,7 +24,7 @@ repos:
 
   meta-freescale:
     url: "https://github.com/Freescale/meta-freescale.git"
-    refspec: 3f0f8a3ca8b9a957425b6e647dd212cd8986cd5a
+    refspec: 0627128b341cfb2bef7a0832ce8cac0ce1127f13
     path: sources/meta-freescale
 
   meta-freescale-3rdparty:
@@ -39,7 +39,7 @@ repos:
 
   meta-imx:
     url: "https://github.com/nxp-imx/meta-imx.git"
-    refspec: f23d0ce80d40c4128116fa0b4dde5f5af9b0357d
+    refspec: rel_imx_6.6.52_2.2.0
     path: sources/meta-imx
     layers:
       meta-imx-bsp:
@@ -48,7 +48,7 @@ repos:
 
   meta-imx-voipac:
     url: "https://github.com/voipac/meta-imx-voipac.git"
-    refspec: ba2f379156c83fcdcd1dedd6a054c53e75c66310
+    refspec: 296e7274805fb5cad5ce1d3aa3fc5485b2f38224
     path: sources/meta-imx-voipac
     layers:
       meta-voipac-bsp:
