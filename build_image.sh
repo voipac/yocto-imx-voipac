@@ -2,7 +2,7 @@
 
 source ./build_common.sh
 
-if  [ ! -z "${2}" ]; then
+if  [ ! -z "${3}" ]; then
 	kas shell ${CONFIG} -c "$2"
 else
 	kas build ${CONFIG}

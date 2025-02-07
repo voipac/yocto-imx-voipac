@@ -1,6 +1,7 @@
 header:
-  version: 10 
+  version: 10
   includes:
     - imx9x-voipac.yml
 
-machine: imx93-voipac
+machine: imx91-voipac
+

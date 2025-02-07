@@ -1,0 +1,7 @@
+header:
+  version: 10
+  includes:
+
+local_conf_header:
+  dram_size: |
+    DRAM_SIZE = "1G"
