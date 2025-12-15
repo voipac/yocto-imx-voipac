@@ -45,5 +45,10 @@ local_conf_header:
     BBMASK += " \
         meta-imx/meta-imx-bsp/recipes-security/optee/* \
         meta-imx/meta-imx-bsp/recipes-security/smw/smw_git.bb \
+        meta-imx/meta-imx-sdk/dynamic-layers/qt6-layer/recipes-fsl/images/imx-image-full.bb \
         "
+    CST_PATH = "/build/cst"
+
+    BB_ENV_PASSTHROUGH_ADDITIONS += "${CST_PATH}"
+
 

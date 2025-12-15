@@ -46,6 +46,13 @@ repos:
       meta-imx-ml:
       meta-imx-sdk:
 
+  meta-nxp-security:
+    url: "https://github.com/nxp-imx-support/meta-nxp-security-reference-design.git"
+    refspec: scarthgap-6.6.23-2.0.0
+    path: sources/meta-nxp-security
+    layers:
+      meta-secure-boot:
+
   meta-imx-voipac:
     url: "https://github.com/voipac/meta-imx-voipac.git"
     refspec: 91e316c27b174d8e332ad600cc7718f8d6d0f0df
