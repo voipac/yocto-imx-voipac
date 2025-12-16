@@ -3,7 +3,7 @@
 source ./build_common.sh
 
 if  [ ! -z "${3}" ]; then
-	./kas-container shell ${CONFIG} -c "$2"
+	./kas-container --runtime-args "--security-opt seccomp=unconfined -v/home/user/tmp/cst-4.0.1:/build/cst" shell ${CONFIG} -c "$3"
 else
-	./kas-container --runtime-args "--security-opt seccomp=unconfined" build ${CONFIG}
+	./kas-container --runtime-args "--security-opt seccomp=unconfined -v/home/user/tmp/cst-4.0.1:/build/cst" build ${CONFIG}
 fi
