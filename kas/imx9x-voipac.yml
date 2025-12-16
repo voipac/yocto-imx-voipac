@@ -46,6 +46,9 @@ local_conf_header:
         meta-imx/meta-imx-bsp/recipes-security/optee/* \
         meta-imx/meta-imx-bsp/recipes-security/smw/smw_git.bb \
         meta-imx/meta-imx-sdk/dynamic-layers/qt6-layer/recipes-fsl/images/imx-image-full.bb \
+        meta-nxp-security/meta-secure-boot/recipes-secure-boot/images/imx-image-multimedia-secure-boot.bb \
+        meta-nxp-security/meta-secure-boot/recipes-secure-boot/images/imx-image-full-secure-boot.bb \
+        meta-nxp-security/meta-secure-boot/recipes-secure-boot/imx-mkimage/imx-boot_%.bbappend \
         "
     CST_PATH = "/build/cst"
 
