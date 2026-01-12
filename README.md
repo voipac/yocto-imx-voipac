@@ -1,7 +1,7 @@
 # Example project for building Yocto for Voipac iMX boards
 
 ## Prerequisities
-Build was verified on Ubuntu 18.04 and Ubuntu 20.04.
+Build was verified on Ubuntu 20.04.
 Install docker papckage on your system.
 
 
